@@ -1,13 +1,13 @@
 package eci.edu.byteProgramming.ejercicio.paper.util;
 
-public class CryptoFactory extends PaymentMethod {
+public class CryptoPayment extends PaymentMethod {
     private String walletAddress;
     private String cryptoType;
     private String token;
     private double walletBalance;
     private String blockchainHash;
     
-    public CryptoFactory(double amount, String customerId, String description,
+    public CryptoPayment(double amount, String customerId, String description,
                  String walletAddress, String cryptoType, double walletBalance) {
         super(amount, customerId, description);
         this.walletAddress = walletAddress;

@@ -1,6 +1,6 @@
 package eci.edu.byteProgramming.ejercicio.paper.util;
 
-public class CreditCardFactory extends PaymentMethod{
+public class CreditCardPayment extends PaymentMethod{
     private String number;
     private String name;
     private String expirationDate;
@@ -8,7 +8,7 @@ public class CreditCardFactory extends PaymentMethod{
     private String cardType;
     private String address;
     
-    public CreditCardFactory(double amount, String customerID, String description,
+    public CreditCardPayment(double amount, String customerID, String description,
                      String number, String name, String expirationDate, String cvv, String address) {
         super(amount, customerID, description);
         this.number = number;

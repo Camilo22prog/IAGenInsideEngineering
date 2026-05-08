@@ -1,11 +1,11 @@
 package eci.edu.byteProgramming.ejercicio.paper.util;
 
-public class PaypalFactory extends PaymentMethod{
+public class PaypalPayment extends PaymentMethod{
     private String email;
     private String paypalTransactionId;
     private String authToken;
     
-    public PaypalFactory(double amount, String customerId, String description,
+    public PaypalPayment(double amount, String customerId, String description,
                  String email, String authToken) {
         super(amount, customerId, description);
         this.email = email;
